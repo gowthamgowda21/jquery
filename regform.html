@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>registration form</title>
+    <link rel="stylesheet" href="css/regform.css" \>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/regform.js"></script>
+</head>
+
+<body>
+    <h3>Placement-Registration form</h3>
+    <form id="regform">
+        <p class="container">
+            <label>
+              USN<span class="star">*</span>
+          </label>
+            <input type="text" name="usn" id="usn" class="required inpreg">
+        </p>
+        <p class="container">
+            <label>
+              Name<span class="star">*</span>
+          </label>
+            <input type="text" name="name" id="name" class="required inpreg">
+        </p>
+        <p class="container">
+            <label>
+              email<span class="star">*</span>
+          </label>
+            <input type="text" name="email" id="email" class="required inpreg">
+        </p>
+        <p class="container">
+            <label>
+              mobile<span class="star">*</span>
+          </label>
+            <input type="text" name="mobile" id="mobile" class="required inpreg">
+        </p>
+        <p class="container">
+            <label>Courses <span class="star">*</span></label>
+            <select class ="required" id="course"name="course">
+                <option  value="">Select Branches</option>
+                   <option value="ece">ECE</option>
+                      <option value="cse">CSE</option>
+                      <option value="me">ME</option>
+                      <option value="civ">CIV</option>
+                <option value="ise">ISE</option>               
+            </select>
+        </p>
+        <p class="container">
+            <label>
+              percentage<span class="star">*</span>
+          </label>
+            <input type="text" name="percentage" id="percentage" class="required inpreg">
+        </p>
+        <p class="container">
+            <label>&nbsp;</label>
+            <input type="button" value="Register" class="submit" id="btnsub">
+            <input type="reset" value="Clear" class="reset" id="btnsub">
+
+        </p>
+    </form>
+
+</body>
+
+</html>
