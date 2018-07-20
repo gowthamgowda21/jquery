@@ -7,10 +7,17 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/regform.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src=" https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 </head>
 
 <body>
     <h3>Placement-Registration form</h3>
+    <hr>
+    <button id="btnsub" class="regstu" style='float:right;margin-bottom: 10px;'>Register</button>
+    <div id="dialog" style="display: none">
     <form id="regform">
         <p class="container">
             <label>
@@ -54,13 +61,21 @@
             <input type="text" name="percentage" id="percentage" class="required inpreg">
         </p>
         <p class="container">
+            <label>
+              DOB<span class="star">*</span>
+          </label>
+            <input type="text" name="dob" id="dob" class="required inpreg">
+        </p>
+        <p class="container">
             <label>&nbsp;</label>
-            <input type="button" value="Register" class="submit" id="btnsub">
+            <input type="button" value="Register"  class="submit" id="btnsub">
             <input type="reset" value="Clear" class="reset" id="btnsub">
 
         </p>
+      
     </form>
-
+    </div>  
+    <div id="content"></div>
 </body>
 
 </html>
